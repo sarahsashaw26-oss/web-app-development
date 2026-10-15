@@ -3,6 +3,7 @@ import ChapterCards from "./components/ChapterCards.jsx"
 import Title from "./components/Title.jsx"
 
 import Button from '@mui/material/Button';
+import Movies from "./components/Movies.jsx";
 
 
 
@@ -12,8 +13,6 @@ function App() {
   const [showTitle, setShowTitle] = useState(false);
 
 
-
-
   function handleButtonClick() {
     setShowTitle(!showTitle);
   }
@@ -21,7 +20,7 @@ function App() {
 
   return (
     <div>
-
+      <Movies />
       <Button
         variant="contained"
         color="success"
@@ -32,11 +31,13 @@ function App() {
 
 
       {
-        showTitle === true ? <Title /> : null
+        showTitle === true ?
+          <div> <Title />
+            <ChapterCards /> </div>
+          : null
       }
 
 
-      <ChapterCards />
     </div>
   )
 }
