@@ -1,0 +1,93 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f6;
+  color: #24332d;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 55px 20px;
+  text-align: center;
+  background: #173f35;
+  color: white;
+}
+
+.app-label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #a9e5c4;
+}
+
+.app-header h1 {
+  margin: 15px 0;
+  font-size: clamp(28px, 5vw, 44px);
+}
+
+.app-description {
+  max-width: 550px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #e0ebe6;
+}
+
+.app-content {
+  width: min(1100px, 92%);
+  margin: 35px auto;
+}
+
+.movies-section,
+.chapters-section {
+  margin-bottom: 35px;
+  padding: 24px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.movies-section h2,
+.chapters-section h2 {
+  margin-top: 0;
+  color: #173f35;
+}
+
+.chapters-section p {
+  line-height: 1.6;
+}
+
+.chapter-content {
+  margin-top: 25px;
+}
+
+.app-footer {
+  padding: 22px;
+  text-align: center;
+  background: #173f35;
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 38px 16px;
+  }
+
+  .app-content {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .movies-section,
+  .chapters-section {
+    padding: 16px;
+  }
+}
